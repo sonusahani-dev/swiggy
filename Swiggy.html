@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiggy Clone - Responsive UI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/swiggy.css">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="main">
+<!-- Navbar HTML -->
+<div class="menu bg-white text-dark ">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <!-- Brand -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+         <img src="/images/swiggysnip.png" alt="images">
+      </a>
+
+      <!-- Toggle button for mobile/tablet -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Items -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto d-flex align-items-lg-center">
+          <!-- Location Input -->
+          <li class="nav-item me-3">
+            <!-- <span class="me-2">Lucknow</span> -->
+            <input
+              type="text"
+              class="form-control form-control-sm mt-1"
+              placeholder="Jankipuram, Lucknow ˅"
+            />
+          </li>
+          <!-- Navigation Icons -->
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-bag-shopping"></i> Swiggy Corporate
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-magnifying-glass"></i> Search
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-tag"></i> Offers
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-handshake-angle"></i> Help
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-user"></i> Sign in
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">
+              <i class="fa-solid fa-cart-shopping"></i> Cart
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+        <!-- Food Category Slider - Fixed -->
+        <div class="slider-section">
+            <div class="sld-container">
+                <div class="sld">
+                    <h1>What's on your mind?</h1>
+                    <button class="scroll-btn scroll-left">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button class="scroll-btn scroll-right">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                    <div class="sld-items">
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-pizza-slice"></i>
+                            </div>
+                            <div>Pizzas</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <div>North Indian</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-drumstick-bite"></i>
+                            </div>
+                            <div>Biryani</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-egg"></i>
+                            </div>
+                            <div>Chinese</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-hamburger"></i>
+                            </div>
+                            <div>Burgers</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-bread-slice"></i>
+                            </div>
+                            <div>Rolls</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-pancakes"></i>
+                            </div>
+                            <div>Dosa</div>
+                        </div>
+                        <div class="sld-item">
+                            <div class="category-icon">
+                                <i class="fas fa-ice-cream"></i>
+                            </div>
+                            <div>Desserts</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Restaurant Chains -->
+        <div class="middle">
+            <h1 class="section-title">Top restaurant chains in Lucknow</h1>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="midd">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-wok"></i> -->
+                             <img src="/images/chinesewok.avif" alt="images">
+                        </div>
+                        <b>Chinese Wok</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 35-45 mins</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="midd">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-pizza-slice"></i> -->
+                             <img src="/images/pizzahut.avif" alt="images">
+                        </div>
+                        <b>Pizza Hut</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 35-45 mins</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="midd">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-hamburger"></i> -->
+                             <img src="images/burgerking.jpg" alt="images">
+                        </div>
+                        <b>Burger King</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 35-45 mins</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="midd">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-pizza-slice"></i> -->
+                             <img src="/images/domlno'spizza.avif" alt="">
+                        </div>
+                        <b>Domino's Pizza</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 35-45 mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Restaurant Listings -->
+        <div class="rmidd">
+            <h1 class="section-title">Restaurants with online food delivery in Lucknow</h1>
+            <div class="rmiddtop">
+                <ul class="d-flex ps-0 mb-0">
+                    <li class="filter-item">Filter</li>
+                    <li class="filter-item">Sort By ˅</li>
+                    <li class="filter-item">Fast Delivery</li>
+                    <li class="filter-item">New on Swiggy</li>
+                    <li class="filter-item">Ratings 4.0+</li>
+                    <li class="filter-item">Pure Veg</li>
+                    <li class="filter-item">Offers</li>
+                    <li class="filter-item">Rs. 300-600</li>
+                    <li class="filter-item">Less than Rs. 300</li>
+                </ul>
+            </div>
+            
+            <div class="restaurant-grid row">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-wok"></i> -->
+                             <img src="/images/pizzahut.avif" alt="images">
+                        </div>
+                        <b>Chinese Wok</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Pizzas, Lucknow</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-wok"></i> -->
+                             <img src="/images/biryani.jpg" alt="">
+                        </div>
+                        <b>Chinese Wok</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Chinese, Asian, Tibetan, Mohanagar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-drumstick-bite"></i> -->
+                             <img src="/images/thebelgian.avif" alt="">
+                        </div>
+                        <b>KFC</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Burger, Fast Food, Roast and Wrap</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-hamburger"></i> -->
+                             <img src="images/burgerKing.avif" alt="">
+                        </div>
+                        <b>Burger King</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Burger, American, Aliganj Lucknow</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-pizza-slice"></i> -->
+                             <img src="/images/dominos.avif" alt="">
+                        </div>
+                        <b>Domino's Pizza</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Pizza, Italian, Dessert Aliganj</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-ice-cream"></i> -->
+                             <img src="images/qualitywalls.avif" alt="">
+                        </div>
+                        <b>Kwality Walls Ice Cream..</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Dessert, Ice Cream, Jankipuram</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-waffle"></i> -->
+                             <img src="images/thebelgian.avif" alt="images">
+                        </div>
+                        <b>The Belgian Waffle Co.</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Waffle, Dessert, Ice Cream Aliganj</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-cookie-bite"></i> -->
+                             <img src="images/thechoclate.avif" alt="images">
+                        </div>
+                        <b>The Chocolate Room</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Bakery, Cafe, Dessert Aliganj</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-utensils"></i> -->
+                             <img src="images/newlucknowk.avif" alt="images">
+                        </div>
+                        <b>New Lucknow Kitchen</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>North Indian, South Indian, Aliganj</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-candy-cane"></i> -->
+                             <img src="images/mahalaxmisweet.jpg" alt="images">
+                        </div>
+                        <b>Mahalaxmi Sweets & More</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Sweets, Chinese, Thalis, North.. Aliganj</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-drumstick-bite"></i> -->
+                             <img src="images/mugalzaika.jpg" alt="images">
+                        </div>
+                        <b>Mughal Zaika Aliganj</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>Chinese, Asian, Tibetan Mohanagar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="rest">
+                        <div class="restaurant-icon">
+                            <!-- <i class="fas fa-utensils"></i> -->
+                             <img src="images/punjabi.jpg" alt="images">
+                        </div>
+                        <b>Punjabi Dhaba</b>
+                        <span class="rating"><i class="fa-regular fa-star"></i> 4.4 • 30-35 mins</span>
+                        <p>North Indian, Punjabi, Aliganj</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Slider functionality
+        const slider = document.querySelector('.sld-items');
+        const scrollLeftBtn = document.querySelector('.scroll-left');
+        const scrollRightBtn = document.querySelector('.scroll-right');
+        
+        scrollLeftBtn.addEventListener('click', () => {
+            slider.scrollBy({
+                left: -200,
+                behavior: 'smooth'
+            });
+        });
+        
+        scrollRightBtn.addEventListener('click', () => {
+            slider.scrollBy({
+                left: 200,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add hover effect to filter items
+        const filterItems = document.querySelectorAll('.filter-item');
+        filterItems.forEach(item => {
+            item.addEventListener('mouseenter', function() {
+                this.style.backgroundColor = '#f8f8f8';
+            });
+            item.addEventListener('mouseleave', function() {
+                this.style.backgroundColor = '#fff';
+            });
+        });
+        
+        // Add active state to filter items
+        filterItems.forEach(item => {
+            item.addEventListener('click', function() {
+                filterItems.forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+                this.style.backgroundColor = '#f8f8f8';
+            });
+        });
+    </script>
+</body>
+</html>
